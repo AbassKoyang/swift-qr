@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftQR</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <h1>Generate QR Code for Your Business</h1>
+        <p class="desc">Create a QR code for free</p>
+        <main class="qr-generator-pannel">
+            <div class="left">
+                <div class="buttons-wrapper" aria-label="Buttons container">
+                    <div class="button-con" aria-label="Url button container">
+                        <button class="code-type-button" aria-label="Url button, click to generate qr code for a url.">
+                            <i class="ri-link-m"></i>
+                        </button>
+                        <p>URL</p>
+                    </div>
+                    <div class="button-con" aria-label="Text button container">
+                        <button class="code-type-button" aria-label="Text button, click to generate qr code for a text.">
+                            <i class="ri-text-snippet"></i>
+                        </button>
+                        <p>Text</p>
+                    </div>
+                    <div class="button-con" aria-label="Text button container">
+                        <button class="code-type-button" aria-label="E-mail button, click to generate qr code for an email address.">
+                            <i class="ri-mail-send-line"></i>
+                        </button>
+                        <p>E-mail</p>
+                    </div>
+                    <div class="button-con" aria-label="Text button container">
+                        <button class="code-type-button" aria-label="Phone button, click to generate qr code for a phone number.">
+                            <i class="ri-phone-line"></i>
+                        </button>
+                        <p>Phone</p>
+                    </div>
+                </div>
+                <h2>Enter your website Url</h2>
+
+                <input class="inputField" type="text" value="www.google.com" placeholder="E.g www.google.com">
+
+                <h2>Colors</h2>
+
+                <div aria-label="Color buttons container, contains the buttons that specify the color of the QR code to be generated." class="color-buttons-wrapper">
+                    <button aria-label="Color determinant buttons, buttons that specify the color of the QR code to be generated. Click to select color black." class="color-button">
+                        <div aria-label="color" class="color" style="background-color: black;">
+                        </div>
+                    </button>
+                    <button aria-label="Color determinant buttons, buttons that specify the color of the QR code to be generated. Click to select color red." class="color-button">
+                        <div aria-label="color" class="color" style="background-color: #E93323;">
+                        </div>
+                    </button>
+                    <button aria-label="Color determinant buttons, buttons that specify the color of the QR code to be generated. Click to select color orange." class="color-button">
+                        <div aria-label="color" class="color" style="background-color: #ED7531;">
+                        </div>
+                    </button>
+                    <button aria-label="Color determinant buttons, buttons that specify the color of the QR code to be generated. Click to select color green." class="color-button">
+                        <div aria-label="color" class="color" style="background-color: #5BBC82;">
+                        </div>
+                    </button>
+                </div>
+
+                <div aria-label="Color buttons container, contains the buttons that specify the color of the QR code to be generated." class="color-buttons-wrapper">
+                    <button aria-label="Color determinant buttons, buttons that specify the color of the QR code to be generated. Click to select color blue." class="color-button">
+                        <div aria-label="color" class="color" style="background-color: #3478F6;">
+                        </div>
+                    </button>
+                    <button aria-label="Color determinant buttons, buttons that specify the color of the QR code to be generated. Click to select color indigo." class="color-button">
+                        <div aria-label="color" class="color" style="background-color: #0F0C9A;">
+                        </div>
+                    </button>
+                    <button aria-label="Color determinant buttons, buttons that specify the color of the QR code to be generated. Click to select color violet." class="color-button">
+                        <div aria-label="color" class="color" style="background-color: #6733BA;">
+                        </div>
+                    </button>
+                    <button aria-label="Color determinant buttons, buttons that specify the color of the QR code to be generated. Click to select color pink." class="color-button">
+                        <div aria-label="color" class="color" style="background-color: #D54797;">
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="right">
+                <h3>Preview QR code</h2>
+                <img src="./images/placeholder.svg" alt="QR code">
+                <div class="file-type-button-wrapper">
+                    <button class="file-type-button">
+                        PNG
+                    </button>
+                    <button class="file-type-button">
+                        PNG
+                    </button>
+                    <button class="file-type-button">
+                        PNG
+                    </button>
+                </div>
+                <button class="download-button">
+                    Download QR Code
+                </button>
+            </div>
+        </main>
+    </section>
+</body>
+</html>
