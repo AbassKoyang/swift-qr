@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 40px 10px;
 }
 h1{
     font-size: 30px;
@@ -46,6 +47,7 @@ h1{
 .left .buttons-wrapper{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     align-items: center;
@@ -159,6 +161,10 @@ form .submit-button{
     cursor: pointer;
 }
 .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     background-color: white;
     border-radius: 20px;
@@ -208,4 +214,68 @@ form .submit-button{
     cursor: pointer;
     outline: none;
     border: none;
+}
+
+@media screen and (max-width: 600px) and (min-width:320px){
+    .qr-generator-pannel{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .left .buttons-wrapper{
+        gap: 10px;
+    }
+    .left .buttons-wrapper .button-con{
+        gap: 8px;
+    }
+    .left .buttons-wrapper .button-con .code-type-button{
+        width: 50px;
+        height: 40px;
+    }
+    form .inputField{
+        width: 250px;
+        height: 40px;
+    }
+    form .submit-button{
+        width: 250px;
+        height: 40px;
+    }
+    .color-buttons-wrapper{
+        gap: 10px;
+    }
+    .color-buttons-wrapper:last-child{
+        margin: 10px 0;
+    }
+    .color-button{
+        width: 60px;
+        height: 45px;
+    }
+    .right h3{
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .right img{
+        width: 270px;
+        height: 270px;
+    }
+    .right .file-type-button-wrapper{
+        margin: 15px 0;
+    }
+    .right .file-type-button-wrapper .file-type-button{
+        padding: 13px 20px;
+        display: flex;
+        font-size: 18px;
+    }
+    .right .download-button{
+        padding: 10px 40px;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 8px;
+        background-color: #07C34A;
+        color: white;
+        cursor: pointer;
+        outline: none;
+        border: none;
+    }
 }

@@ -126,8 +126,6 @@ function generateQR() {
         alert("Please enter a value");
     }else{
         QRCodeImage.src= `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${data}&bgcolor=${bgColor}&margin=0&color=${selectedColor}&format=${selectedFormat}`;
-        console.log(selectedColor);
-        console.log(selectedFormat);
     }
 }
 
@@ -153,11 +151,10 @@ async function handleDownloadImage(imageUrl, suggestedFileName) {
 submitButton.addEventListener('click', generateQR);
 downloadButton.addEventListener('click', () => {
     const imageUrl = QRCodeImage.src;
-    const isUrlValid = imageUrl.toString().indexOf('placeholder');
+    const isUrlValid = imageUrl.toString().indexOf('/images/placeholder.svg');
     if(inputFieldValue.value !== '' && isUrlValid === -1){
         handleDownloadImage(QRCodeImage.src, inputFieldValue.value);
     } else{
         alert('Please enter a value and generate QR code before trying to download.')
     }
-    console.log(QRCodeImage.src, isUrlValid)
 })
