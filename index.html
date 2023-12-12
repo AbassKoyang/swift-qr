@@ -15,33 +15,33 @@
             <div class="left">
                 <div class="buttons-wrapper" aria-label="Buttons container">
                     <div class="button-con" aria-label="Url button container">
-                        <button class="code-type-button" aria-label="Url button, click to generate qr code for a url.">
+                        <button class="code-type-button url" aria-label="Url button, click to generate qr code for a url.">
                             <i class="ri-link-m"></i>
                         </button>
                         <p>URL</p>
                     </div>
                     <div class="button-con" aria-label="Text button container">
-                        <button class="code-type-button" aria-label="Text button, click to generate qr code for a text.">
+                        <button class="code-type-button text" aria-label="Text button, click to generate qr code for a text.">
                             <i class="ri-text-snippet"></i>
                         </button>
                         <p>Text</p>
                     </div>
                     <div class="button-con" aria-label="Text button container">
-                        <button class="code-type-button" aria-label="E-mail button, click to generate qr code for an email address.">
+                        <button class="code-type-button email" aria-label="E-mail button, click to generate qr code for an email address.">
                             <i class="ri-mail-send-line"></i>
                         </button>
                         <p>E-mail</p>
                     </div>
                     <div class="button-con" aria-label="Text button container">
-                        <button class="code-type-button" aria-label="Phone button, click to generate qr code for a phone number.">
+                        <button class="code-type-button phone" aria-label="Phone button, click to generate qr code for a phone number.">
                             <i class="ri-phone-line"></i>
                         </button>
                         <p>Phone</p>
                     </div>
                 </div>
-                <h2>Enter your website Url</h2>
+                <h2 class="label">Enter your website Url</h2>
 
-                <input class="inputField" type="text" value="www.google.com" placeholder="E.g www.google.com">
+                <input class="inputField" id="inputField" type="text" value="www.google.com" placeholder="E.g www.google.com">
 
                 <h2>Colors</h2>
 
@@ -85,16 +85,16 @@
             </div>
             <div class="right">
                 <h3>Preview QR code</h2>
-                <img src="./images/placeholder.svg" alt="QR code">
+                <img class="qr-code-image" src="./images/placeholder.svg" alt="QR code">
                 <div class="file-type-button-wrapper">
                     <button class="file-type-button">
                         PNG
                     </button>
                     <button class="file-type-button">
-                        PNG
+                        JPEG
                     </button>
                     <button class="file-type-button">
-                        PNG
+                        SVG
                     </button>
                 </div>
                 <button class="download-button">
@@ -103,5 +103,6 @@
             </div>
         </main>
     </section>
+    <script src="./script.js"></script>
 </body>
 </html>

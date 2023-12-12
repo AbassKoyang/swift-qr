@@ -64,10 +64,16 @@ h1{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    border:  1px solid #07C34A;
+    border:  1px solid transparent;
     outline: none;
     background-color: #F8F9FA;
     cursor: pointer;
+}
+.left .buttons-wrapper .button-con .code-type-button:focus{
+    border:  1px solid #07C34A;
+}
+.left .buttons-wrapper .button-con .code-type-button:active{
+    border:  1px solid #07C34A;
 }
 .left .buttons-wrapper .button-con p{
     font-size: 13px;
@@ -89,7 +95,13 @@ h2{
     border-radius: 8px;
     border: none;
     padding-left: 20px;
-    outline: 2px solid #07C34A;
+    outline: 2px solid gray;
+}
+.inputField:focus{
+    outline:  2px solid #07C34A;
+}
+.inputField:active{
+    outline:  2px solid #07C34A;
 }
 .color-buttons-wrapper{
     display: flex;
@@ -109,10 +121,16 @@ h2{
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    border:  1px solid #07C34A;
+    border:  1px solid transparent;
     outline: none;
     background-color: #F8F9FA;
     cursor: pointer;
+}
+.color-button:focus{
+    border:  1px solid #07C34A;
+}
+.color-button:active{
+    border:  1px solid #07C34A;
 }
 .color-button .color{
     width: 25px;
@@ -132,7 +150,8 @@ h2{
 .right img{
     width: 200px;
     height: 200px;
-    border: 1px solid gray;
+    outline: 1px solid rgb(214, 212, 212);
+    outline-offset: 3px;
 }
 .right .file-type-button-wrapper{
     display: flex;
@@ -147,11 +166,17 @@ h2{
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    border:  1px solid #07C34A;
+    border:  1px solid transparent;
     outline: none;
     background-color: #F8F9FA;
     cursor: pointer;
     color: #07C34A;
+}
+.right .file-type-button-wrapper .file-type-button:focus{
+    border:  1px solid #07C34A;
+}
+.right .file-type-button-wrapper .file-type-button:active{
+    border:  1px solid #07C34A;
 }
 .right .download-button{
     padding: 10px 40px;
