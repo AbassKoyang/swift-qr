@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #F4F9FE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+h1{
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 25px;
+}
+.desc{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0 30px 0;
+}
+.qr-code-panel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 960px;
+    padding: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(110, 110, 110, 0.1);
+}
+form .file-input-con {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.form-desc{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    outline: 1px solid rgb(214, 212, 212);
+    outline-offset: 3px;
+}
+form .file-input-con input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+label{
+    padding: 10px 30px;
+    border-radius: 8px;
+    background-color: #e7faee;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.button{
+    padding: 10px 30px;
+    border-radius: 8px;
+    background-color: #07C34A;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.content-con{
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(110, 110, 110, 0.1)
+}
+.content-con textarea{
+    resize: none;
+    width: 100%;
+    min-height: 100px;
+    max-height: 300px;
+    overflow: auto;
+    outline: none;
+    border: none;
+}
+
+a{
+    padding: 10px 20px;
+    background-color: #07C34A;
+    color: white;
+    border-radius: 4px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+}
+a p{
+    font-size: 14px;
+}
+a i{
+    font-size: 20px;
+    color: white;
+}
+
+@media screen and (max-width: 600px) and (min-width:320px){
+    .qr-code-panel{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

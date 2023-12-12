@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftQR - Scan any QR code for free.</title>
+    <link rel="stylesheet" href="scan.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <h1>Scan Unlimited QR Codes for Free</h1>
+        <p class="desc">Scan a QR code for free in seconds</p>
+        <div class="qr-code-panel"> 
+            <form enctype="multipart/form-data" action="http://api.qrserver.com/v1/read-qr-code/" method="POST" id="qrCodeForm">
+                <img class="qr-code-image" src="./images/placeholder.svg" alt="QR code">
+                <p class="form-desc">Choose QR code image to read/scan:</p>
+                <input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
+                <div class="file-input-con">
+                    <input name="file" type="file" id="fileInput" class="file-input"/>
+                    <label for="fileInput">Choose QR code image</label>
+                </div>
+                <input type="button" value="Read QR code" class="button" />
+            </form>
+            <div class="content-con">
+                <textarea readonly rows="23" cols="50" placeholder="Scan result will be shown here." class="result"></textarea>
+            </div>
+        </div>
+        <a href="./index.html"><p>Back to QR Code Generator</p><i class="ri-arrow-left-line"></i></a>
+    </section>
+    <script src="scan.js"></script>
+</body>
+</html>

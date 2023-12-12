@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 40px 10px;
+    padding: 40px 20px;
 }
 h1{
     font-size: 30px;
@@ -43,6 +43,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 0 10px rgba(110, 110, 110, 0.1);
 }
 .left .buttons-wrapper{
     display: flex;
@@ -168,6 +169,7 @@ form .submit-button{
     padding: 20px;
     background-color: white;
     border-radius: 20px;
+    box-shadow: 0 0 10px rgba(110, 110, 110, 0.1);
 }
 .right h3{
     font-size: 25px;
@@ -216,11 +218,36 @@ form .submit-button{
     border: none;
 }
 
+a{
+    padding: 10px 20px;
+    background-color: #07C34A;
+    color: white;
+    border-radius: 4px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+}
+a p{
+    font-size: 14px;
+}
+a i{
+    font-size: 20px;
+    color: white;
+}
+
 @media screen and (max-width: 600px) and (min-width:320px){
     .qr-generator-pannel{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
     }
     .left .buttons-wrapper{
         gap: 10px;
@@ -232,12 +259,15 @@ form .submit-button{
         width: 50px;
         height: 40px;
     }
+    form{
+        width: 100%;
+    }
     form .inputField{
-        width: 250px;
+        width: 100%;
         height: 40px;
     }
     form .submit-button{
-        width: 250px;
+        width: 100%;
         height: 40px;
     }
     .color-buttons-wrapper{
